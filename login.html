@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <main class="container">
+        <div class="login-form flex column justify-sp-bt align-center">
+            <div class="page-logo fulll-width flex justify-center align-center">
+                <img src="./assets/logo.jpg" alt="">
+                <h2>Login</h2>
+            </div>
+            <div class="form flex column justify-center align-center">
+                <div class="title flex column justify-center align-center">
+                    <h1 class="title-text">Welcome</h1>
+                    <p>Please enter your details</p>
+                </div>
+                <div class="slider flex justify-sp-bt align-center">
+                    <button class="sliderBtn selected">Sign In</button>
+                    <button class="sliderBtn">Sign Up</button>
+                </div>
+                <div class="form-fields full-width flex column justify-center align-center">
+                    <div class="form-field flex justify-sp-bt align-center">
+                        <img src="./assets/mail-logo.jpg" alt="">
+                        <input class="emailInput" type="text" placeholder="Email">
+                        <img class="tick" src="./assets/tick.jpg" alt="">
+                    </div>
+                    <button class="submitBtn">Continue</button>
+                </div>
+                <div class="logos full-width">
+                    <div class="text full-width flex justify-center align-center">
+                        <div class="line"></div>
+                        <p>Or Continue With</p>
+                    </div>
+                    <div class="logoRow flex justify-center align-center">
+                        <img src="./assets/google-logo.png" alt="">
+                        <img src="./assets/apple-logo.png" alt="">
+                        <img src="./assets/instagram.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="info full-width">
+                <p>Powered by CSS SAMURAIS.</p>
+            </div>
+        </div>
+    </main>
+</body>
+<script>
+    const check = document.querySelector(".tick");
+    const emailInput = document.querySelector(".emailInput");
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    setInterval(() => {
+        if (emailRegex.test(emailInput.value)) {
+            check.style.display = "block";
+        } else {
+            check.style.display = "none";
+        }
+    }, 1000);
+</script>
+</html>
