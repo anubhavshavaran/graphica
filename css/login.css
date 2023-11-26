@@ -1,0 +1,137 @@
+.login-form {
+    height: 100vh;
+    width: 100vw;
+    padding: 40px;
+    gap: 75px;
+}
+.login-form .page-logo {
+    gap: 20px;
+}
+.login-form .page-logo h2 {
+    font-weight: 500;
+    margin-top: 15px;
+    font-size: 1.75rem;
+}
+.login-form .page-logo img {
+    width: 20%;
+}
+
+/* Form Styles */
+.form {
+    gap: 20px;
+    width: 100%;
+}
+.form .form-fields {
+    gap: 10px;
+}
+.form .title h1 {
+    font-weight: 500;
+    font-size: 2rem;
+    line-height: 40px;
+}
+.form .title p {
+    color: var(--color-light-gray-199);
+    font-size: 0.85rem;
+}
+.slider {
+    width: 100%;
+    background-color: var(--color-light-gray-199);
+    padding: 2.5px;
+    border-radius: 17.5px;
+    gap: 5px;
+}
+.sliderBtn {
+    width: 100%;
+    padding: 10px 15px;
+    border-radius: 15px;
+    border: none;
+    background: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.sliderBtn.selected {
+    background-color: var(--color-white);
+}
+.form-fields .form-field {
+    padding: 15px;
+    border: 2px solid var(--color-light-gray-199);
+    border-radius: 17.5px;
+    gap: 15px;
+}
+.form-fields .form-field input {
+    width: 100%;
+}
+.form-fields .form-field img {
+    width: 7.5%;
+}
+.form-fields .form-field img:nth-child(1) {
+    width: 10%;
+    padding-right: 10px;
+    border-right: 1px solid var(--color-light-gray-199);
+}
+.form-fields .form-field img:nth-child(3) {
+    display: none;
+    width: 6%;
+}
+.form-fields .submitBtn {
+    width: 100%;
+    border-radius: 17.5px;
+    padding: 15px;
+    background-color: var(--color-blue);
+    color: var(--color-white);
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.logos .text {
+    position: relative;
+    margin-top: 20px;
+}
+.logos .text .line {
+    width: 100%;
+    height: 1.25px;
+    background-color: var(--color-light-gray-199);
+}
+.logos .text p {
+    position: absolute;
+    background-color: var(--color-white);
+    padding: 0px 10px;
+    font-size: 0.80rem;
+    color: var(--color-light-gray-199);
+}
+.logos .logoRow {
+    padding: 30px 10px;
+    gap: 10px;
+}
+.logos .logoRow img {
+    width: 35px;
+    padding: 5px;
+}
+.info {
+    color: var(--color-light-gray-199);
+    text-align: center;
+    font-size: 0.75rem;
+}
+.banner-img {
+    display: none;
+}
+@media (min-width: 1200px) {
+    .banner-img {
+        display: flex;
+        justify-content: end;
+    }
+    .banner-img img {
+        height: 100vh;
+        width: 75%;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .login-form {
+        width: 50%;
+    }
+    .form {
+        padding: 0px 150px;
+    }
+}
